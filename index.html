@@ -3,36 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IONIC 1</title>
+    <title>IONIC</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
 <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
 </head>
 <body>
-     <!-- TAG PRINCIPALE SOLO UNO PER APP -->
     <ion-app>
-        <ion-content>
-            <h1>Titolo</h1>
-            <ion-button onclick="onClick(event)" class="esof-button-uno">
-                Click me
-            </ion-button>
-            <ion-button onclick="onClick(event)" class="esof-button-due">
-                Click me
-            </ion-button>
-        </ion-content>
     </ion-app>
-    <script>
-        console.log('FIRE!')
-        console.log('FIRE! 2')
-        async function onClick (event) {
-            
-            if (event.target.className.includes('esof-button-uno')){
-                console.log('bottone uno')
-            }
-            else{
-                console.log('bottone due')
-            }
-        }
-    </script>
 </body>
 </html>
