@@ -6,11 +6,12 @@ const aggiungiBtn = document.querySelector('#btn-aggiungi')
 const speseList = document.querySelector('#list-spese')
 const speseTotaliOutput = document.querySelector('#spese-totali')
 
-const allertController = document.querySelector('ion-allert-controller')
+const alertController = document.querySelector('ion-alert-controller')
 
 let spesaTotale = 0
 
-const cancella = () =>{
+
+const cancella = () => {
     motivoSpesa.value = ''
     importoSpesa.value = ''
 }
@@ -19,11 +20,13 @@ aggiungiBtn.addEventListener('click',() =>{
     // console.log('aggiungi spesa')
     const motivoInserito = motivoSpesa.value
     const importoInserito = importoSpesa.value
-    if(importoInserito <= 0
+    if (
+        importoInserito <= 0
         || importoInserito.trim().lenght <= 0
-        || motivoInserito.trim().lenght <= 0
+        || motivoInserito.trim().length <= 0
         ){
-            allertController.create({
+         // alert('Valori non validi')
+            alertController.create({
                 message: 'Perfavore inserisci valori validi',
                 header: 'valori non validi',
                 buttons: ['Ok']
