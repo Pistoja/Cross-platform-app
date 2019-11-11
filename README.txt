@@ -1,2 +1,5 @@
-esofEvents Mobile App in Ionic
-23/10/2019
+Dev mode:
+
+- npm install
+
+- npm run start:dev
