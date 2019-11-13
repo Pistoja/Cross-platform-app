@@ -1,8 +1,10 @@
-//const Calendar = require('./calendar.js')
-const DATA = require('./data.js')
-const Calendar = DATA.calendar
-// ES&+
-// import Calendar from './calendar.js'
+const Calendar = require('./calendar.js')
+const Speakers = require('./speakers.js')
+Calendar.render()
+Speakers.render()
 
 
-console.log('ESOF 2019', DATA)
+
+const myMap = L.map('mapView').setView(45.6522854, 13.7661518, 14)
+
+LtitleLayer
