@@ -13,7 +13,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "webpack --watch",
     "start:dev": "webpack-dev-server",
-    "build": "webpack --mode production",
+    "htmlcss": "cp ./src/index.html ./www & cp ./src/style.css ./www",
+    "build": "webpack --mode production & npm run htmlcss",
     "ionic:build": "npm run build"
   },
   "repository": {
