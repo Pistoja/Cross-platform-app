@@ -11,10 +11,10 @@
 </head>
 <body>
   <ion-app>
-    <ion-tabs>
-        <ion-tab tab="calendar">
+    <ion-tabs id="tabs">
+        <ion-tab tab="calendar" class="calendar">
             <ion-header translucent>
-                <ion-toolbar>
+                <ion-toolbar color="primary">
                     <ion-title>Schedule</ion-title>
                 </ion-toolbar>
             </ion-header>
@@ -36,10 +36,44 @@
             </ion-content>
         </ion-tab>
         <ion-tab tab="map">
-            <h1>Map</h1>
+            <ion-header>
+                <ion-toolbar color="tertiary">
+                    <ion-title>Map</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <div id="mapView"></div>
+            </ion-content>
         </ion-tab>
         <ion-tab tab="info">
-            <h1>Information</h1>
+            <ion-header>
+                <ion-toolbar color="warning">
+                    <ion-title>Information</ion-title>
+                </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <div class="about-header">
+                    <img src="https://www.units.it/sites/default/files/styles/slideshow_1170x425/public/media/immagini/notizie/trieste10.jpg?itok=xm54wuX_" alt="panorama Trieste">
+                </div>
+                <div class="about-info">
+                    <h4 class="ion-padding-start">ESOF 2020</h4>
+                    <ion-list lines="none">
+                        <ion-item>
+                            <ion-icon name="calendar"></ion-icon>
+                            <ion-label>Location</ion-label>
+                            Trieste, Italy
+                        </ion-item>
+                        <ion-item>
+                            <ion-icon name="pin"></ion-icon>
+                            <ion-label>Date</ion-label>
+                            <ion-datetime display-format="D MM, YYYY" value="2020-06-11"></ion-datetime>
+                        </ion-item>
+                    </ion-list>
+                    <p>
+                        ESOF2020 Trieste will take place from 5 to 9 July 2020 and in the two weeks preceding and following the main event. The activities include meetings, conferences, seminars and public events such as shows and exhibitions. Over 4000 researchers, educators, business actors, policy makers and journalists from all over the world are expected in Trieste to discuss breakthroughs in science. ESOF 2020’s main events will be held in the extraordinary area of the Porto Vecchio, the old port of Trieste which was for decades the commercial port of the Austro-Hungarian Empire and now is an outstanding architectural and industrial heritage that the Trieste Municipality is redeveloping.
+                    </p>
+                </div>
+            </ion-content>
         </ion-tab>
         <ion-tab-bar slot="bottom">
             <ion-tab-button tab="calendar">
