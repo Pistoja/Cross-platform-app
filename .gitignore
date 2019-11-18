@@ -1,4 +1,5 @@
 .DS_Store
+resources
 package-lock.json
 step1
 # Logs
