@@ -27,7 +27,32 @@ ion-item-group > ion-item {
   background: #ffffff;
 }
 
-ion-item > ion-label {
+.calendar ion-item > ion-label {
   border-left: 2px solid #3bc7c4;
   padding-left: 10px;
+}
+
+
+/* START SPEAKER*/
+.speaker-wrapper {
+  --background: #ffffff;
+}
+.speaker-card {
+  --background: #f2f2f2;
+}
+
+
+/* MAP*/
+#mapView {
+  width: 100vw;
+  height: 79vh;
+}
+
+
+/*Info*/
+.about-info p {
+  text-align: left;
+  padding: 1rem;
+  line-height: 1.5;
+  color: var --ion-color-dark
 }
