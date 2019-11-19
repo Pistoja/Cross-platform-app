@@ -6,3 +6,4 @@ Dev mode:
 
 Production mode:
 - npm run build
+- ionic build

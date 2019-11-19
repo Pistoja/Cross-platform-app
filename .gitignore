@@ -1,6 +1,6 @@
 .DS_Store
 package-lock.json
-www
+www/*
 step1
 # Logs
 logs
